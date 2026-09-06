@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jozibroc | Practical Tools for Real Life</title>
+    <title>Jozibroc — Practical Tools. Ready to Use.</title>
 
-    <meta name="description"
-        content="Jozibroc provides practical, ready-to-use guides and systems created for Nigerian women, entrepreneurs and small business owners.">
+    <meta
+        name="description"
+        content="Jozibroc creates practical, ready-to-use guides and systems for Nigerian women, entrepreneurs and small business owners."
+    >
 
-    <!-- =========================
+    <!-- =====================================================
          META PIXEL
-         Jozibroc Pixel ID:
-         851390221299784
-    ========================== -->
+         JOZIBROC PIXEL
+         ID: 851390221299784
+    ====================================================== -->
 
     <script>
         !function(f,b,e,v,n,t,s)
@@ -40,54 +43,1527 @@
             s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)
         }
-        (window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+        (
+            window,
+            document,
+            'script',
+            'https://connect.facebook.net/en_US/fbevents.js'
+        );
 
         fbq('init', '851390221299784');
         fbq('track', 'PageView');
     </script>
 
     <noscript>
-        <img height="1"
-             width="1"
-             style="display:none"
-             src="https://www.facebook.com/tr?id=851390221299784&ev=PageView&noscript=1"
-             alt="">
+        <img
+            height="1"
+            width="1"
+            style="display:none"
+            src="https://www.facebook.com/tr?id=851390221299784&ev=PageView&noscript=1"
+            alt=""
+        >
     </noscript>
 
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ====================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Inter,
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            color: #181715;
+            background: #fbfaf7;
+
+            line-height: 1.6;
+
+            overflow-x: hidden;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =====================================================
+           VARIABLES
+        ====================================================== */
+
+        :root {
+
+            --black: #171715;
+
+            --cream: #f4efe7;
+
+            --cream-2: #faf7f1;
+
+            --white: #ffffff;
+
+            --brown: #a76038;
+
+            --brown-dark: #824728;
+
+            --grey: #706b64;
+
+            --border: #ded8cf;
+
+            --serif:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            --sans:
+                Inter,
+                Arial,
+                Helvetica,
+                sans-serif;
+        }
+
+
+        /* =====================================================
+           GENERAL
+        ====================================================== */
+
+        .container {
+
+            width: min(
+                1180px,
+                calc(100% - 48px)
+            );
+
+            margin: auto;
+        }
+
+        .section {
+
+            padding: 120px 0;
+        }
+
+        .eyebrow {
+
+            color: var(--brown-dark);
+
+            font-size: 11px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 18px;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ====================================================== */
+
+        header {
+
+            position: fixed;
+
+            width: 100%;
+
+            top: 0;
+            left: 0;
+
+            z-index: 999;
+
+            background:
+                rgba(250,248,243,.92);
+
+            backdrop-filter:
+                blur(15px);
+
+            border-bottom:
+                1px solid rgba(0,0,0,.06);
+        }
+
+        .nav {
+
+            height: 78px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+        }
+
+        .logo {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            font-family: var(--serif);
+
+            font-size: 24px;
+
+            font-weight: 700;
+        }
+
+        .logo-symbol {
+
+            width: 36px;
+            height: 36px;
+
+            border-radius: 50%;
+
+            background: var(--black);
+
+            color: white;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 16px;
+        }
+
+        .nav-links {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 34px;
+
+            font-size: 14px;
+        }
+
+        .nav-links a {
+
+            color: #55514b;
+
+            transition: .25s;
+        }
+
+        .nav-links a:hover {
+
+            color: var(--brown-dark);
+        }
+
+        .nav-contact {
+
+            padding: 12px 20px;
+
+            background: var(--black);
+
+            color: white !important;
+
+            border-radius: 50px;
+        }
+
+        .menu {
+
+            display: none;
+
+            border: none;
+
+            background: none;
+
+            cursor: pointer;
+        }
+
+        .menu span {
+
+            display: block;
+
+            width: 26px;
+
+            height: 2px;
+
+            background: var(--black);
+
+            margin: 5px;
+        }
+
+
+        /* =====================================================
+           HERO
+        ====================================================== */
+
+        .hero {
+
+            min-height: 100vh;
+
+            padding-top: 78px;
+
+            background: var(--cream);
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        .hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(167,96,56,.08);
+
+            right: -180px;
+            top: 100px;
+        }
+
+        .hero-grid {
+
+            min-height:
+                calc(100vh - 78px);
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 0.9fr;
+
+            align-items: center;
+
+            gap: 80px;
+        }
+
+        .hero-copy {
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+        .hero h1 {
+
+            font-family: var(--serif);
+
+            font-weight: 500;
+
+            font-size:
+                clamp(55px, 7vw, 100px);
+
+            line-height: .91;
+
+            letter-spacing: -5px;
+
+            max-width: 760px;
+        }
+
+        .hero h1 em {
+
+            color: var(--brown-dark);
+
+            font-style: italic;
+
+            font-weight: 400;
+        }
+
+        .hero-description {
+
+            max-width: 560px;
+
+            margin-top: 30px;
+
+            font-size: 17px;
+
+            color: #625d56;
+        }
+
+        .hero-buttons {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 13px;
+
+            margin-top: 35px;
+
+            flex-wrap: wrap;
+        }
+
+        .button {
+
+            min-height: 52px;
+
+            padding:
+                0 23px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 18px;
+
+            border-radius: 50px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            transition:
+                transform .25s,
+                background .25s;
+        }
+
+        .button:hover {
+
+            transform: translateY(-3px);
+        }
+
+        .button-dark {
+
+            background: var(--black);
+
+            color: white;
+        }
+
+        .button-dark:hover {
+
+            background: var(--brown-dark);
+        }
+
+        .button-outline {
+
+            border:
+                1px solid #282724;
+
+            color: var(--black);
+        }
+
+        .hero-stats {
+
+            margin-top: 55px;
+
+            padding-top: 25px;
+
+            border-top:
+                1px solid var(--border);
+
+            display: flex;
+
+            gap: 45px;
+        }
+
+        .hero-stat strong {
+
+            display: block;
+
+            font-family: var(--serif);
+
+            font-size: 20px;
+        }
+
+        .hero-stat span {
+
+            display: block;
+
+            font-size: 11px;
+
+            color: var(--grey);
+
+            margin-top: 2px;
+        }
+
+
+        /* =====================================================
+           HERO IMAGE
+        ====================================================== */
+
+        .hero-photo {
+
+            position: relative;
+
+            display: flex;
+
+            justify-content: center;
+        }
+
+        .photo-frame {
+
+            width: min(
+                480px,
+                100%
+            );
+
+            background: white;
+
+            padding: 14px;
+
+            box-shadow:
+                0 35px 90px
+                rgba(0,0,0,.14);
+
+            position: relative;
+        }
+
+        .photo-frame img {
+
+            aspect-ratio: 1 / 1;
+
+            object-fit: cover;
+        }
+
+        .photo-caption {
+
+            position: absolute;
+
+            left: -35px;
+
+            bottom: 35px;
+
+            background: var(--black);
+
+            color: white;
+
+            padding:
+                18px 25px;
+
+            min-width: 230px;
+
+            box-shadow:
+                0 15px 40px
+                rgba(0,0,0,.18);
+        }
+
+        .photo-caption small {
+
+            display: block;
+
+            color: #aaa59e;
+
+            font-size: 10px;
+
+            letter-spacing: 2px;
+        }
+
+        .photo-caption strong {
+
+            display: block;
+
+            font-family: var(--serif);
+
+            font-size: 19px;
+
+            font-weight: 500;
+
+            margin: 3px 0;
+        }
+
+        .photo-caption span {
+
+            font-size: 11px;
+
+            color: #aaa59e;
+        }
+
+
+        /* =====================================================
+           ABOUT
+        ====================================================== */
+
+        .about {
+
+            background: var(--cream-2);
+        }
+
+        .about-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                .85fr 1.15fr;
+
+            gap: 120px;
+        }
+
+        .about-title h2 {
+
+            font-family: var(--serif);
+
+            font-size:
+                clamp(40px,5vw,68px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -3px;
+        }
+
+        .about-copy {
+
+            max-width: 650px;
+
+            color: #55514b;
+
+            font-size: 16px;
+        }
+
+        .about-copy p {
+
+            margin-bottom: 22px;
+        }
+
+        .signature {
+
+            margin-top: 35px;
+
+            font-family:
+                "Brush Script MT",
+                cursive;
+
+            font-size: 36px;
+
+            color: var(--black);
+        }
+
+        .signature-title {
+
+            font-size: 11px;
+
+            color: var(--grey);
+        }
+
+
+        /* =====================================================
+           GUIDES
+        ====================================================== */
+
+        .guides {
+
+            background: var(--cream);
+        }
+
+        .section-intro {
+
+            display: flex;
+
+            align-items: end;
+
+            justify-content: space-between;
+
+            gap: 50px;
+
+            margin-bottom: 55px;
+        }
+
+        .section-intro h2 {
+
+            font-family: var(--serif);
+
+            font-size:
+                clamp(42px,5vw,68px);
+
+            line-height: 1;
+
+            font-weight: 500;
+
+            letter-spacing: -3px;
+        }
+
+        .section-intro > p {
+
+            max-width: 410px;
+
+            color: var(--grey);
+
+            font-size: 15px;
+        }
+
+        .guide-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 20px;
+        }
+
+        .guide {
+
+            min-height: 590px;
+
+            padding: 45px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        .guide-business {
+
+            background: var(--black);
+
+            color: white;
+        }
+
+        .guide-fuller {
+
+            background: white;
+
+            border:
+                1px solid var(--border);
+        }
+
+        .guide-number {
+
+            position: absolute;
+
+            top: 35px;
+
+            right: 38px;
+
+            font-size: 12px;
+
+            opacity: .5;
+        }
+
+        .guide-symbol {
+
+            width: 58px;
+            height: 58px;
+
+            border:
+                1px solid rgba(255,255,255,.2);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 24px;
+
+            margin-bottom: 40px;
+        }
+
+        .guide-fuller .guide-symbol {
+
+            border-color: var(--border);
+        }
+
+        .guide-category {
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+            opacity: .65;
+
+            margin-bottom: 12px;
+        }
+
+        .guide h3 {
+
+            font-family: var(--serif);
+
+            font-size:
+                clamp(38px,4vw,57px);
+
+            font-weight: 500;
+
+            line-height: .95;
+
+            letter-spacing: -2px;
+        }
+
+        .guide-description {
+
+            max-width: 500px;
+
+            margin:
+                25px 0;
+
+            color: #bcb7b0;
+
+            font-size: 14px;
+        }
+
+        .guide-fuller .guide-description {
+
+            color: var(--grey);
+        }
+
+        .guide ul {
+
+            list-style: none;
+
+            display: grid;
+
+            gap: 11px;
+
+            margin-bottom: 30px;
+        }
+
+        .guide li {
+
+            font-size: 13px;
+
+            padding-left: 21px;
+
+            position: relative;
+        }
+
+        .guide li::before {
+
+            content: "✓";
+
+            position: absolute;
+
+            left: 0;
+
+            color: var(--brown);
+        }
+
+        .guide-bottom {
+
+            margin-top: auto;
+
+            padding-top: 22px;
+
+            border-top:
+                1px solid rgba(255,255,255,.16);
+
+            display: flex;
+
+            align-items: end;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .guide-fuller .guide-bottom {
+
+            border-color: var(--border);
+        }
+
+        .guide-price small {
+
+            display: block;
+
+            color: #96918a;
+
+            font-size: 11px;
+
+            text-decoration: line-through;
+        }
+
+        .guide-price strong {
+
+            font-family: var(--serif);
+
+            font-size: 29px;
+
+            font-weight: 500;
+        }
+
+        .market-price {
+
+            color: #aaa59e;
+
+            font-size: 11px;
+        }
+
+        .guide-link {
+
+            font-size: 13px;
+
+            font-weight: 800;
+
+            white-space: nowrap;
+
+            transition: .2s;
+        }
+
+        .guide-link:hover {
+
+            color: var(--brown);
+        }
+
+
+        /* =====================================================
+           HOW IT WORKS
+        ====================================================== */
+
+        .how {
+
+            background: var(--cream-2);
+        }
+
+        .center-heading {
+
+            max-width: 700px;
+
+            text-align: center;
+
+            margin:
+                0 auto 65px;
+        }
+
+        .center-heading h2 {
+
+            font-family: var(--serif);
+
+            font-size:
+                clamp(42px,5vw,65px);
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            letter-spacing: -3px;
+        }
+
+        .center-heading p {
+
+            color: var(--grey);
+
+            margin-top: 17px;
+
+            font-size: 15px;
+        }
+
+        .steps {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            border-top:
+                1px solid var(--border);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .step {
+
+            padding:
+                42px 30px;
+
+            display: flex;
+
+            gap: 25px;
+        }
+
+        .step + .step {
+
+            border-left:
+                1px solid var(--border);
+        }
+
+        .step-number {
+
+            font-family: var(--serif);
+
+            font-size: 22px;
+
+            color: var(--brown-dark);
+        }
+
+        .step h3 {
+
+            font-size: 15px;
+
+            margin-bottom: 7px;
+        }
+
+        .step p {
+
+            color: var(--grey);
+
+            font-size: 13px;
+        }
+
+        .how-button {
+
+            display: flex;
+
+            justify-content: center;
+
+            margin-top: 42px;
+        }
+
+
+        /* =====================================================
+           REVIEWS
+        ====================================================== */
+
+        .reviews {
+
+            background: var(--cream);
+        }
+
+        .reviews-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 18px;
+        }
+
+        .review {
+
+            background: white;
+
+            padding: 35px;
+
+            min-height: 275px;
+
+            display: flex;
+
+            flex-direction: column;
+        }
+
+        .quote {
+
+            font-family: var(--serif);
+
+            font-size: 58px;
+
+            line-height: .6;
+
+            color: var(--brown);
+        }
+
+        .review-text {
+
+            margin-top: 27px;
+
+            font-family: var(--serif);
+
+            font-size: 18px;
+
+            line-height: 1.4;
+
+            color: #37332f;
+        }
+
+        .reviewer {
+
+            margin-top: auto;
+
+            padding-top: 25px;
+        }
+
+        .reviewer strong {
+
+            display: block;
+
+            font-size: 12px;
+        }
+
+        .reviewer span {
+
+            color: var(--grey);
+
+            font-size: 11px;
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ====================================================== */
+
+        .contact {
+
+            background: var(--black);
+
+            color: white;
+        }
+
+        .contact-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 100px;
+
+            align-items: center;
+        }
+
+        .contact .eyebrow {
+
+            color: #d08a5d;
+        }
+
+        .contact h2 {
+
+            font-family: var(--serif);
+
+            font-size:
+                clamp(45px,5vw,72px);
+
+            font-weight: 500;
+
+            line-height: .98;
+
+            letter-spacing: -3px;
+        }
+
+        .contact-description {
+
+            max-width: 500px;
+
+            color: #aaa59e;
+
+            margin-top: 25px;
+
+            font-size: 15px;
+        }
+
+        .contact-list {
+
+            display: grid;
+
+            gap: 12px;
+        }
+
+        .contact-item {
+
+            padding: 20px;
+
+            border:
+                1px solid #3a3936;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 16px;
+
+            transition: .25s;
+        }
+
+        .contact-item:hover {
+
+            border-color: #77716a;
+
+            transform:
+                translateX(4px);
+        }
+
+        .contact-icon {
+
+            width: 43px;
+            height: 43px;
+
+            border-radius: 50%;
+
+            background: #292826;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 10px;
+
+            font-weight: 800;
+        }
+
+        .contact-details {
+
+            flex: 1;
+        }
+
+        .contact-details small {
+
+            display: block;
+
+            color: #858079;
+
+            font-size: 9px;
+
+            letter-spacing: 1.5px;
+        }
+
+        .contact-details strong {
+
+            font-size: 14px;
+
+            font-weight: 600;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ====================================================== */
+
+        footer {
+
+            background: #10100f;
+
+            color: #8f8a83;
+
+            padding: 30px 0;
+        }
+
+        .footer {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            font-size: 11px;
+        }
+
+        .footer .logo {
+
+            color: white;
+
+            font-size: 18px;
+        }
+
+        .footer .logo-symbol {
+
+            width: 29px;
+            height: 29px;
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           ANIMATIONS
+        ====================================================== */
+
+        .fade {
+
+            opacity: 0;
+
+            transform:
+                translateY(25px);
+
+            transition:
+                opacity .8s ease,
+                transform .8s ease;
+        }
+
+        .fade.show {
+
+            opacity: 1;
+
+            transform:
+                translateY(0);
+        }
+
+
+        /* =====================================================
+           TABLET
+        ====================================================== */
+
+        @media(max-width: 900px) {
+
+            .nav-links {
+
+                position: absolute;
+
+                top: 78px;
+
+                left: 0;
+                right: 0;
+
+                background: var(--cream-2);
+
+                border-bottom:
+                    1px solid var(--border);
+
+                padding: 20px;
+
+                display: none;
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+                gap: 5px;
+            }
+
+            .nav-links.open {
+
+                display: flex;
+            }
+
+            .nav-links a {
+
+                padding: 11px;
+            }
+
+            .nav-contact {
+
+                text-align: center;
+            }
+
+            .menu {
+
+                display: block;
+            }
+
+            .hero-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 65px;
+
+                padding:
+                    80px 0;
+            }
+
+            .hero-photo {
+
+                order: -1;
+            }
+
+            .photo-frame {
+
+                width:
+                    min(420px,90%);
+            }
+
+            .about-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 50px;
+            }
+
+            .contact-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 50px;
+            }
+
+            .guide-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .steps {
+
+                grid-template-columns: 1fr;
+            }
+
+            .step + .step {
+
+                border-left: none;
+
+                border-top:
+                    1px solid var(--border);
+            }
+
+            .reviews-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ====================================================== */
+
+        @media(max-width: 600px) {
+
+            .container {
+
+                width:
+                    calc(100% - 28px);
+            }
+
+            .section {
+
+                padding:
+                    80px 0;
+            }
+
+            .hero h1 {
+
+                font-size: 54px;
+
+                letter-spacing: -3px;
+            }
+
+            .hero-description {
+
+                font-size: 15px;
+            }
+
+            .hero-stats {
+
+                gap: 20px;
+
+                flex-wrap: wrap;
+            }
+
+            .section-intro {
+
+                display: block;
+            }
+
+            .section-intro > p {
+
+                margin-top: 20px;
+            }
+
+            .guide {
+
+                padding:
+                    30px 25px;
+
+                min-height: 540px;
+            }
+
+            .guide h3 {
+
+                font-size: 42px;
+            }
+
+            .guide-bottom {
+
+                align-items: center;
+            }
+
+            .photo-caption {
+
+                left: -5px;
+
+                bottom: 25px;
+            }
+
+            .footer {
+
+                flex-direction: column;
+
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
-<!-- =========================
-     NAVIGATION
-========================== -->
 
-<header class="header">
+<!-- =========================================================
+     NAVIGATION
+========================================================== -->
+
+<header>
 
     <div class="container nav">
 
         <a href="#home" class="logo">
-            <span class="logo-circle">J</span>
-            <span>Jozibroc</span>
+
+            <span class="logo-symbol">
+                J
+            </span>
+
+            <span>
+                Jozibroc
+            </span>
+
         </a>
 
-        <button class="menu-btn" id="menuBtn">
+
+        <button
+            class="menu"
+            id="menuButton"
+            aria-label="Open navigation"
+        >
+
             <span></span>
             <span></span>
             <span></span>
+
         </button>
 
-        <nav id="navMenu">
 
-            <a href="#about">About</a>
-            <a href="#guides">Guides</a>
-            <a href="#how">How It Works</a>
-            <a href="#reviews">Reviews</a>
+        <nav
+            class="nav-links"
+            id="navigation"
+        >
 
-            <a href="#contact" class="nav-button">
-                Contact Elizabeth
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#guides">
+                Guides
+            </a>
+
+            <a href="#how">
+                How It Works
+            </a>
+
+            <a href="#reviews">
+                Reviews
+            </a>
+
+            <a
+                href="#contact"
+                class="nav-contact"
+            >
+                Talk to Elizabeth
             </a>
 
         </nav>
@@ -97,59 +1573,115 @@
 </header>
 
 
-<!-- =========================
+
+<!-- =========================================================
      HERO
-========================== -->
+========================================================== -->
 
-<section class="hero" id="home">
+<main>
 
-    <div class="container hero-container">
+<section
+    class="hero"
+    id="home"
+>
 
-        <div class="hero-content reveal">
+    <div class="container hero-grid">
+
+
+        <div class="hero-copy fade">
 
             <div class="eyebrow">
-                PRACTICAL TOOLS • REAL RESULTS
+                PRACTICAL TOOLS • READY TO USE
             </div>
 
+
             <h1>
+
                 Stop starting
-                <span>from a blank page.</span>
+                <br>
+
+                <em>
+                    from a blank page.
+                </em>
+
             </h1>
 
-            <p>
-                Jozibroc creates practical, ready-to-use guides
-                designed to make everyday business and personal
-                goals simpler.
+
+            <p class="hero-description">
+
+                Jozibroc creates practical guides and
+                ready-to-use systems for Nigerian women,
+                entrepreneurs and small business owners.
+
             </p>
+
 
             <div class="hero-buttons">
 
-                <a href="#guides" class="btn primary">
+                <a
+                    href="#guides"
+                    class="button button-dark"
+                >
+
                     Explore Our Guides
-                    <span>→</span>
+
+                    <span>
+                        →
+                    </span>
+
                 </a>
 
-                <a href="#about" class="btn secondary">
+
+                <a
+                    href="#about"
+                    class="button button-outline"
+                >
+
                     Meet Elizabeth
+
                 </a>
 
             </div>
 
-            <div class="hero-features">
 
-                <div>
-                    <strong>Simple</strong>
-                    <small>No unnecessary jargon</small>
+            <div class="hero-stats">
+
+                <div class="hero-stat">
+
+                    <strong>
+                        Practical
+                    </strong>
+
+                    <span>
+                        Built for real needs
+                    </span>
+
                 </div>
 
-                <div>
-                    <strong>Practical</strong>
-                    <small>Ready to use</small>
+
+                <div class="hero-stat">
+
+                    <strong>
+                        Simple
+                    </strong>
+
+                    <span>
+                        No unnecessary jargon
+                    </span>
+
                 </div>
 
-                <div>
-                    <strong>Local</strong>
-                    <small>Made for Nigeria</small>
+
+                <div class="hero-stat">
+
+                    <strong>
+                        Local
+                    </strong>
+
+                    <span>
+                        Made with Nigeria in mind
+                    </span>
+
                 </div>
 
             </div>
@@ -157,88 +1689,119 @@
         </div>
 
 
-        <div class="hero-image reveal">
 
-            <div class="image-wrapper">
+        <div class="hero-photo fade">
+
+            <div class="photo-frame">
 
                 <img
                     src="assets/elizabeth-sambo.png"
-                    alt="Elizabeth Sambo - Founder of Jozibroc"
+                    alt="Elizabeth Sambo, founder of Jozibroc"
                 >
 
-                <div class="founder-card">
 
-                    <span>FOUNDER</span>
+                <div class="photo-caption">
+
+                    <small>
+                        FOUNDER
+                    </small>
 
                     <strong>
                         Elizabeth Sambo
                     </strong>
 
-                    <small>
+                    <span>
                         Jozibroc
-                    </small>
+                    </span>
 
                 </div>
 
             </div>
 
         </div>
+
 
     </div>
 
 </section>
 
 
-<!-- =========================
-     ABOUT
-========================== -->
 
-<section class="section about" id="about">
+<!-- =========================================================
+     ABOUT
+========================================================== -->
+
+<section
+    class="section about"
+    id="about"
+>
 
     <div class="container about-grid">
 
-        <div class="section-title reveal">
+
+        <div class="about-title fade">
 
             <div class="eyebrow">
                 ABOUT JOZIBROC
             </div>
 
             <h2>
-                Practical systems
-                without the
-                unnecessary complexity.
+
+                Useful systems.
+                <br>
+                No unnecessary
+                <br>
+                complexity.
+
             </h2>
 
         </div>
 
 
-        <div class="about-text reveal">
+        <div class="about-copy fade">
 
             <p>
+
                 Elizabeth Sambo started Jozibroc after years
                 of doing the unglamorous work of writing letters,
                 drafting contracts and organising records for others.
+
             </p>
 
+
             <p>
+
                 She realised that many Nigerian women need
-                the same practical tools — just packaged so they
-                don't have to start from a blank page.
+                the same practical tools — just packaged so
+                they don't have to start from a blank page.
+
             </p>
 
+
             <p>
-                Every guide sold through Jozibroc is created from
+
+                Every guide sold on Jozibroc is written from
                 lived experience, tested with real users and
                 priced for the market it is made for.
+
             </p>
+
+
+            <p>
+
+                No jargon. No filler.
+                Just the exact system, ready to use.
+
+            </p>
+
 
             <div class="signature">
                 Elizabeth
             </div>
 
-            <small>
+            <div class="signature-title">
                 Founder, Jozibroc
-            </small>
+            </div>
 
         </div>
 
@@ -247,15 +1810,20 @@
 </section>
 
 
-<!-- =========================
-     GUIDES
-========================== -->
 
-<section class="section guides" id="guides">
+<!-- =========================================================
+     GUIDES
+========================================================== -->
+
+<section
+    class="section guides"
+    id="guides"
+>
 
     <div class="container">
 
-        <div class="section-header reveal">
+
+        <div class="section-intro fade">
 
             <div>
 
@@ -265,51 +1833,68 @@
 
                 <h2>
                     Tools you can
+                    <br>
                     actually use.
                 </h2>
 
             </div>
 
+
             <p>
-                Straightforward resources created around
-                real everyday needs.
+
+                Clear, practical resources created around
+                everyday needs — from business paperwork
+                to meal planning.
+
             </p>
 
         </div>
 
 
-        <div class="products">
+
+        <div class="guide-grid">
 
 
-            <!-- PRODUCT ONE -->
+            <!-- ADMINISTRATIVE POWER PACK -->
 
-            <article class="product product-dark reveal">
+            <article
+                class="guide guide-business fade"
+            >
 
-                <span class="product-number">
+                <span class="guide-number">
                     01
                 </span>
 
-                <div class="product-icon">
+
+                <div class="guide-symbol">
                     ✦
                 </div>
 
-                <div class="product-label">
+
+                <div class="guide-category">
                     BUSINESS TOOLKIT
                 </div>
 
+
                 <h3>
+
                     The Administrative
                     <br>
                     Power-Pack
+
                 </h3>
 
-                <p>
+
+                <p class="guide-description">
+
                     A ready-to-use business communication
-                    and contract toolkit containing
-                    fill-in-the-blank templates for the
-                    letters, agreements and records Nigerian
-                    small business owners use repeatedly.
+                    and contract toolkit with fill-in-the-blank
+                    templates for the letters, agreements
+                    and records Nigerian small business
+                    owners write over and over.
+
                 </p>
+
 
                 <ul>
 
@@ -332,18 +1917,23 @@
 
                 </ul>
 
-                <div class="product-bottom">
 
-                    <span>
+                <div class="guide-bottom">
+
+                    <span class="market-price">
                         Priced for the Nigerian market
                     </span>
 
+
                     <a
-                        href="#contact"
-                        class="product-link"
-                        data-guide="The Administrative Power-Pack"
+                        href="https://wa.me/2348035386550?text=Hello%20Elizabeth%2C%20I%27m%20interested%20in%20The%20Administrative%20Power-Pack."
+                        class="guide-link"
+                        target="_blank"
+                        onclick="trackGuide('Administrative Power-Pack')"
                     >
+
                         Get the Guide →
+
                     </a>
 
                 </div>
@@ -351,33 +1941,47 @@
             </article>
 
 
-            <!-- PRODUCT TWO -->
 
-            <article class="product product-light reveal">
+            <!-- FULLER BODY METHOD -->
 
-                <span class="product-number">
+            <article
+                class="guide guide-fuller fade"
+            >
+
+                <span class="guide-number">
                     02
                 </span>
 
-                <div class="product-icon">
+
+                <div class="guide-symbol">
                     ◌
                 </div>
 
-                <div class="product-label">
+
+                <div class="guide-category">
                     NUTRITION & MEAL SYSTEM
                 </div>
 
+
                 <h3>
+
                     The Fuller-Body
                     <br>
                     Method
+
                 </h3>
 
-                <p>
+
+                <p class="guide-description">
+
                     A step-by-step nutrition and meal system
-                    built around traditional African foods
-                    and practical food combinations.
+                    for African and diaspora women, built
+                    around traditional, calorie-dense food
+                    combinations rather than expensive
+                    supplements.
+
                 </p>
+
 
                 <ul>
 
@@ -386,26 +1990,27 @@
                     </li>
 
                     <li>
-                        Nigerian ingredient guide
+                        What to eat, how to combine it and when
                     </li>
 
                     <li>
-                        30-day meal calendar
+                        Nigerian ingredient names and market guide
                     </li>
 
                     <li>
-                        Meal preparation schedule
+                        30-day meal calendar and prep schedule
                     </li>
 
                 </ul>
 
-                <div class="product-bottom">
 
-                    <div class="price">
+                <div class="guide-bottom">
 
-                        <span>
+                    <div class="guide-price">
+
+                        <small>
                             ₦19,500
-                        </span>
+                        </small>
 
                         <strong>
                             ₦9,800
@@ -413,12 +2018,16 @@
 
                     </div>
 
+
                     <a
-                        href="#contact"
-                        class="product-link"
-                        data-guide="The Fuller-Body Method"
+                        href="https://wa.me/2348035386550?text=Hello%20Elizabeth%2C%20I%27m%20interested%20in%20The%20Fuller-Body%20Method."
+                        class="guide-link"
+                        target="_blank"
+                        onclick="trackGuide('Fuller-Body Method')"
                     >
+
                         Get the Guide →
+
                     </a>
 
                 </div>
@@ -432,15 +2041,20 @@
 </section>
 
 
-<!-- =========================
-     HOW IT WORKS
-========================== -->
 
-<section class="section how" id="how">
+<!-- =========================================================
+     HOW BUYING WORKS
+========================================================== -->
+
+<section
+    class="section how"
+    id="how"
+>
 
     <div class="container">
 
-        <div class="center-title reveal">
+
+        <div class="center-heading fade">
 
             <div class="eyebrow">
                 HOW BUYING WORKS
@@ -451,8 +2065,10 @@
             </h2>
 
             <p>
+
                 No complicated checkout process.
                 Just message, pay and receive your guide.
+
             </p>
 
         </div>
@@ -461,7 +2077,7 @@
         <div class="steps">
 
 
-            <div class="step reveal">
+            <div class="step fade">
 
                 <span class="step-number">
                     01
@@ -474,7 +2090,7 @@
                     </h3>
 
                     <p>
-                        Tell Elizabeth which guide
+                        Let Elizabeth know which guide
                         you would like.
                     </p>
 
@@ -483,7 +2099,7 @@
             </div>
 
 
-            <div class="step reveal">
+            <div class="step fade">
 
                 <span class="step-number">
                     02
@@ -496,8 +2112,8 @@
                     </h3>
 
                     <p>
-                        Bank transfer, debit card or
-                        USSD — whichever is easiest.
+                        Bank transfer, debit card or USSD —
+                        whichever is easiest.
                     </p>
 
                 </div>
@@ -505,7 +2121,7 @@
             </div>
 
 
-            <div class="step reveal">
+            <div class="step fade">
 
                 <span class="step-number">
                     03
@@ -519,7 +2135,7 @@
 
                     <p>
                         Your guide is delivered directly
-                        to your WhatsApp or email.
+                        to WhatsApp or email.
                     </p>
 
                 </div>
@@ -529,15 +2145,21 @@
         </div>
 
 
-        <div class="center-button">
+        <div class="how-button">
 
             <a
-                href="https://wa.me/2348035386550?text=Hello%20Elizabeth%2C%20I%27m%20interested%20in%20a%20Jozibroc%20guide."
+                href="https://wa.me/2348035386550?text=Hello%20Elizabeth%2C%20I%27d%20like%20to%20know%20more%20about%20Jozibroc%20guides."
                 target="_blank"
-                class="btn primary"
+                class="button button-dark"
+                onclick="trackLead()"
             >
+
                 Start on WhatsApp
-                <span>↗</span>
+
+                <span>
+                    ↗
+                </span>
+
             </a>
 
         </div>
@@ -547,15 +2169,20 @@
 </section>
 
 
-<!-- =========================
-     REVIEWS
-========================== -->
 
-<section class="section reviews" id="reviews">
+<!-- =========================================================
+     REVIEWS
+========================================================== -->
+
+<section
+    class="section reviews"
+    id="reviews"
+>
 
     <div class="container">
 
-        <div class="center-title reveal">
+
+        <div class="center-heading fade">
 
             <div class="eyebrow">
                 WHAT BUYERS ARE SAYING
@@ -563,94 +2190,96 @@
 
             <h2>
                 Real people.
+                <br>
                 Real feedback.
             </h2>
 
         </div>
 
 
-        <div class="review-grid">
+        <div class="reviews-grid">
 
 
-            <div class="review reveal">
+            <article class="review fade">
 
                 <div class="quote">
                     “
                 </div>
 
-                <p>
-                    Customer review will appear here.
-                    Replace this text with a genuine
-                    customer testimonial.
+                <p class="review-text">
+                    Customer review goes here.
+                    Replace this with a genuine
+                    testimonial from a Jozibroc buyer.
                 </p>
 
-                <div class="review-person">
+                <div class="reviewer">
 
                     <strong>
                         Customer Name
                     </strong>
 
                     <span>
-                        Abuja, Nigeria
+                        City, Nigeria
                     </span>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <div class="review reveal">
+            <article class="review fade">
 
                 <div class="quote">
                     “
                 </div>
 
-                <p>
-                    Customer review will appear here.
-                    Replace this text with a genuine
-                    customer testimonial.
+                <p class="review-text">
+                    Customer review goes here.
+                    Replace this with a genuine
+                    testimonial from a Jozibroc buyer.
                 </p>
 
-                <div class="review-person">
+                <div class="reviewer">
 
                     <strong>
                         Customer Name
                     </strong>
 
                     <span>
-                        Lagos, Nigeria
+                        City, Nigeria
                     </span>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <div class="review reveal">
+            <article class="review fade">
 
                 <div class="quote">
                     “
                 </div>
 
-                <p>
-                    Customer review will appear here.
-                    Replace this text with a genuine
-                    customer testimonial.
+                <p class="review-text">
+                    Customer review goes here.
+                    Replace this with a genuine
+                    testimonial from a Jozibroc buyer.
                 </p>
 
-                <div class="review-person">
+                <div class="reviewer">
 
                     <strong>
                         Customer Name
                     </strong>
 
                     <span>
-                        Port Harcourt, Nigeria
+                        City, Nigeria
                     </span>
 
                 </div>
 
-            </div>
+            </article>
+
 
         </div>
 
@@ -659,48 +2288,63 @@
 </section>
 
 
-<!-- =========================
-     CONTACT
-========================== -->
 
-<section class="section contact" id="contact">
+<!-- =========================================================
+     CONTACT
+========================================================== -->
+
+<section
+    class="section contact"
+    id="contact"
+>
 
     <div class="container contact-grid">
 
-        <div class="contact-text reveal">
+
+        <div class="fade">
 
             <div class="eyebrow">
                 GET IN TOUCH
             </div>
 
+
             <h2>
+
                 Let's get you
+                <br>
                 the right guide.
+
             </h2>
 
-            <p>
+
+            <p class="contact-description">
+
                 Have a question, want to buy a guide,
-                or need help choosing one?
-                Send Elizabeth a message.
+                or need help deciding which one is right
+                for you? Send Elizabeth a message.
+
             </p>
 
         </div>
 
 
-        <div class="contact-links reveal">
+
+        <div class="contact-list fade">
 
 
             <a
                 href="https://wa.me/2348035386550?text=Hello%20Elizabeth%2C%20I%27m%20interested%20in%20a%20Jozibroc%20guide."
                 target="_blank"
-                class="contact-link"
+                class="contact-item"
+                onclick="trackLead()"
             >
 
                 <div class="contact-icon">
                     WA
                 </div>
 
-                <div>
+                <div class="contact-details">
+
                     <small>
                         WHATSAPP / PHONE
                     </small>
@@ -708,9 +2352,12 @@
                     <strong>
                         0803 538 6550
                     </strong>
+
                 </div>
 
-                <span>↗</span>
+                <span>
+                    ↗
+                </span>
 
             </a>
 
@@ -718,14 +2365,15 @@
             <a
                 href="https://www.instagram.com/jozibroc/"
                 target="_blank"
-                class="contact-link"
+                class="contact-item"
             >
 
                 <div class="contact-icon">
                     IG
                 </div>
 
-                <div>
+                <div class="contact-details">
+
                     <small>
                         INSTAGRAM
                     </small>
@@ -733,20 +2381,24 @@
                     <strong>
                         @jozibroc
                     </strong>
+
                 </div>
 
-                <span>↗</span>
+                <span>
+                    ↗
+                </span>
 
             </a>
 
 
-            <div class="contact-link">
+            <div class="contact-item">
 
                 <div class="contact-icon">
                     FB
                 </div>
 
-                <div>
+                <div class="contact-details">
+
                     <small>
                         FACEBOOK
                     </small>
@@ -754,6 +2406,7 @@
                     <strong>
                         Jozibroc
                     </strong>
+
                 </div>
 
                 <span>
@@ -769,17 +2422,24 @@
 </section>
 
 
-<!-- =========================
+</main>
+
+
+
+<!-- =========================================================
      FOOTER
-========================== -->
+========================================================== -->
 
 <footer>
 
     <div class="container footer">
 
-        <div class="logo footer-logo">
+        <a
+            href="#home"
+            class="logo"
+        >
 
-            <span class="logo-circle">
+            <span class="logo-symbol">
                 J
             </span>
 
@@ -787,15 +2447,17 @@
                 Jozibroc
             </span>
 
-        </div>
+        </a>
+
 
         <p>
             Practical tools. Ready to use.
         </p>
 
+
         <p>
-            © <span id="year"></span> Jozibroc.
-            All rights reserved.
+            © <span id="year"></span>
+            Jozibroc. All rights reserved.
         </p>
 
     </div>
@@ -803,7 +2465,155 @@
 </footer>
 
 
-<script src="script.js"></script>
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================== -->
+
+<script>
+
+    /* =====================================================
+       MOBILE NAVIGATION
+    ====================================================== */
+
+    const menuButton =
+        document.getElementById("menuButton");
+
+    const navigation =
+        document.getElementById("navigation");
+
+
+    menuButton.addEventListener(
+        "click",
+        function () {
+
+            navigation.classList.toggle("open");
+
+        }
+    );
+
+
+    document
+        .querySelectorAll("#navigation a")
+        .forEach(function(link) {
+
+            link.addEventListener(
+                "click",
+                function() {
+
+                    navigation.classList.remove("open");
+
+                }
+            );
+
+        });
+
+
+
+    /* =====================================================
+       SCROLL ANIMATION
+    ====================================================== */
+
+    const fadeElements =
+        document.querySelectorAll(".fade");
+
+
+    const observer =
+        new IntersectionObserver(
+            function(entries) {
+
+                entries.forEach(
+                    function(entry) {
+
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            entry.target
+                                .classList
+                                .add("show");
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    }
+                );
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    fadeElements.forEach(
+        function(element) {
+
+            observer.observe(element);
+
+        }
+    );
+
+
+
+    /* =====================================================
+       YEAR
+    ====================================================== */
+
+    document.getElementById("year")
+        .textContent =
+        new Date().getFullYear();
+
+
+
+    /* =====================================================
+       META PIXEL — GUIDE INTEREST
+    ====================================================== */
+
+    function trackGuide(guideName) {
+
+        if (
+            typeof fbq === "function"
+        ) {
+
+            fbq(
+                "trackCustom",
+                "GuideInterest",
+                {
+                    guide_name: guideName
+                }
+            );
+
+        }
+
+    }
+
+
+
+    /* =====================================================
+       META PIXEL — LEAD
+    ====================================================== */
+
+    function trackLead() {
+
+        if (
+            typeof fbq === "function"
+        ) {
+
+            fbq(
+                "track",
+                "Lead"
+            );
+
+        }
+
+    }
+
+</script>
+
 
 </body>
 </html>
