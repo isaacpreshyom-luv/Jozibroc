@@ -1,67 +1,171 @@
-// Jozibroc website interactions
+/* =========================================
+   JOZIBROC JAVASCRIPT
+========================================= */
 
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
 
-menuToggle?.addEventListener("click", () => {
-  const open = navLinks.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+
+
+menuBtn.addEventListener("click", function () {
+
+    navMenu.classList.toggle("active");
+
 });
 
-document.querySelectorAll("#navLinks a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    menuToggle?.setAttribute("aria-expanded", "false");
-  });
+
+/* Close mobile menu after clicking a link */
+
+document.querySelectorAll("#navMenu a").forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        navMenu.classList.remove("active");
+
+    });
+
 });
 
-// Reveal sections as they enter the viewport.
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
 
-document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+/* =========================================
+   SCROLL REVEAL ANIMATION
+========================================= */
 
-// Automatically add the current year.
-document.getElementById("year").textContent = new Date().getFullYear();
+const revealElements =
+    document.querySelectorAll(".reveal");
 
-// Track guide interest in Meta Pixel and personalise WhatsApp messages.
-document.querySelectorAll("[data-guide]").forEach(button => {
-  button.addEventListener("click", () => {
-    const guide = button.dataset.guide;
 
-    if (typeof fbq === "function") {
-      fbq("trackCustom", "GuideInterest", { guide_name: guide });
-    }
+const observer =
+    new IntersectionObserver(
 
-    const contact = document.querySelector("#contact");
-    if (contact) {
-      const phone = "2348035386550";
-      const message = encodeURIComponent(
-        `Hello Elizabeth, I'm interested in "${guide}". Please send me the details.`
-      );
+        function (entries) {
 
-      const whatsappLinks = contact.querySelectorAll(
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("visible");
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.12
+        }
+
+    );
+
+
+revealElements.forEach(function (element) {
+
+    observer.observe(element);
+
+});
+
+
+/* =========================================
+   CURRENT YEAR
+========================================= */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+/* =========================================
+   GUIDE INTEREST TRACKING
+   META PIXEL
+========================================= */
+
+const guideButtons =
+    document.querySelectorAll("[data-guide]");
+
+
+guideButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        const guide =
+            button.getAttribute("data-guide");
+
+
+        /*
+            Send custom event to Meta Pixel
+        */
+
+        if (typeof fbq === "function") {
+
+            fbq(
+                "trackCustom",
+                "GuideInterest",
+                {
+                    guide_name: guide
+                }
+            );
+
+        }
+
+
+        /*
+            Update WhatsApp message
+            based on selected guide
+        */
+
+        const whatsappLinks =
+            document.querySelectorAll(
+                'a[href^="https://wa.me/"]'
+            );
+
+
+        const message =
+            encodeURIComponent(
+                `Hello Elizabeth, I'm interested in "${guide}". Please send me the details.`
+            );
+
+
+        whatsappLinks.forEach(function (link) {
+
+            link.href =
+                `https://wa.me/2348035386550?text=${message}`;
+
+        });
+
+    });
+
+});
+
+
+/* =========================================
+   WHATSAPP LEAD TRACKING
+========================================= */
+
+const whatsappLinks =
+    document.querySelectorAll(
         'a[href^="https://wa.me/"]'
-      );
+    );
 
-      whatsappLinks.forEach(link => {
-        link.href = `https://wa.me/${phone}?text=${message}`;
-      });
-    }
-  });
-});
 
-// Track WhatsApp clicks as a Lead event.
-document.querySelectorAll('a[href^="https://wa.me/"]').forEach(link => {
-  link.addEventListener("click", () => {
-    if (typeof fbq === "function") {
-      fbq("track", "Lead");
-    }
-  });
+whatsappLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        if (typeof fbq === "function") {
+
+            fbq(
+                "track",
+                "Lead"
+            );
+
+        }
+
+    });
+
 });

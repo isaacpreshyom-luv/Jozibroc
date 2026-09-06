@@ -1,286 +1,809 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jozibroc — practical, ready-to-use business guides for Nigerian women and small business owners.">
-  <title>Jozibroc | Practical Tools. Ready to Use.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Meta Pixel: Jozibroc Pixels | ID 851390221299784 -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '851390221299784');
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=851390221299784&ev=PageView&noscript=1"
-         alt="">
-  </noscript>
+    <title>Jozibroc | Practical Tools for Real Life</title>
 
-  <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="Jozibroc provides practical, ready-to-use guides and systems created for Nigerian women, entrepreneurs and small business owners.">
+
+    <!-- =========================
+         META PIXEL
+         Jozibroc Pixel ID:
+         851390221299784
+    ========================== -->
+
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {
+            if(f.fbq)return;
+            n=f.fbq=function()
+            {
+                n.callMethod ?
+                n.callMethod.apply(n,arguments) :
+                n.queue.push(arguments)
+            };
+
+            if(!f._fbq)f._fbq=n;
+
+            n.push=n;
+            n.loaded=!0;
+            n.version='2.0';
+            n.queue=[];
+
+            t=b.createElement(e);
+            t.async=!0;
+            t.src=v;
+
+            s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)
+        }
+        (window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '851390221299784');
+        fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1"
+             width="1"
+             style="display:none"
+             src="https://www.facebook.com/tr?id=851390221299784&ev=PageView&noscript=1"
+             alt="">
+    </noscript>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="#home" aria-label="Jozibroc home">
-        <span class="brand-mark">J</span>
-        <span>Jozibroc</span>
-      </a>
+<!-- =========================
+     NAVIGATION
+========================== -->
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+<header class="header">
 
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#guides">Guides</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#contact" class="nav-cta">Talk to Elizabeth</a>
-      </div>
-    </nav>
-  </header>
+    <div class="container nav">
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-pattern"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">PRACTICAL TOOLS FOR REAL LIFE</p>
-          <h1>Stop starting<br><span>from a blank page.</span></h1>
-          <p class="hero-text">
-            Ready-to-use guides and practical systems created for Nigerian women,
-            entrepreneurs and everyday business owners.
-          </p>
-          <div class="hero-actions">
-            <a href="#guides" class="btn btn-primary">Explore the Guides <span>→</span></a>
-            <a href="#about" class="btn btn-secondary">Meet Elizabeth</a>
-          </div>
-          <div class="trust-row">
-            <div><strong>Simple</strong><span>No jargon</span></div>
-            <div><strong>Practical</strong><span>Ready to use</span></div>
-            <div><strong>Local</strong><span>Made for Nigeria</span></div>
-          </div>
-        </div>
+        <a href="#home" class="logo">
+            <span class="logo-circle">J</span>
+            <span>Jozibroc</span>
+        </a>
 
-        <div class="hero-portrait reveal">
-          <div class="portrait-frame">
-            <img src="assets/elizabeth-sambo.png" alt="Elizabeth Sambo">
-            <div class="portrait-card">
-              <span>Founder</span>
-              <strong>Elizabeth Sambo</strong>
-              <small>Jozibroc</small>
+        <button class="menu-btn" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="navMenu">
+
+            <a href="#about">About</a>
+            <a href="#guides">Guides</a>
+            <a href="#how">How It Works</a>
+            <a href="#reviews">Reviews</a>
+
+            <a href="#contact" class="nav-button">
+                Contact Elizabeth
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================== -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-container">
+
+        <div class="hero-content reveal">
+
+            <div class="eyebrow">
+                PRACTICAL TOOLS • REAL RESULTS
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="intro section" id="about">
-      <div class="container two-col">
-        <div class="section-heading reveal">
-          <p class="eyebrow">ABOUT JOZIBROC</p>
-          <h2>Useful systems, without the unnecessary complexity.</h2>
-        </div>
-        <div class="intro-copy reveal">
-          <p>
-            Elizabeth Sambo started Jozibroc after years of doing the unglamorous
-            work of writing letters, drafting contracts, and organising records for others.
-          </p>
-          <p>
-            She realised many Nigerian women need the same practical tools — just packaged
-            so they don't have to start from a blank page.
-          </p>
-          <p>
-            Every guide is written from lived experience, tested with real users, and
-            priced for the market it's made for.
-          </p>
-          <div class="signature">Elizabeth Sambo</div>
-          <p class="founder-note">Founder, Jozibroc</p>
-        </div>
-      </div>
-    </section>
+            <h1>
+                Stop starting
+                <span>from a blank page.</span>
+            </h1>
 
-    <section class="guides section" id="guides">
-      <div class="container">
-        <div class="section-top reveal">
-          <div>
-            <p class="eyebrow">OUR GUIDES</p>
-            <h2>Tools you can actually use.</h2>
-          </div>
-          <p class="section-description">
-            Clear, practical resources built around everyday needs — from business
-            paperwork to food planning.
-          </p>
-        </div>
-
-        <div class="guide-grid">
-          <article class="guide-card dark reveal">
-            <div class="guide-number">01</div>
-            <div class="guide-icon">✦</div>
-            <p class="card-label">BUSINESS TOOLKIT</p>
-            <h3>The Administrative<br>Power-Pack</h3>
-            <p class="card-description">
-              A ready-to-use business communication and contract toolkit with
-              fill-in-the-blank templates for letters, agreements and records.
+            <p>
+                Jozibroc creates practical, ready-to-use guides
+                designed to make everyday business and personal
+                goals simpler.
             </p>
-            <ul>
-              <li>13 fill-in-the-blank templates</li>
-              <li>5 practical categories</li>
-              <li>Communication, contracts & records</li>
-              <li>No legal or writing background needed</li>
-            </ul>
-            <div class="card-footer">
-              <span class="price-note">Priced for the Nigerian market</span>
-              <a href="#contact" class="card-link" data-guide="The Administrative Power-Pack">Get the guide →</a>
-            </div>
-          </article>
 
-          <article class="guide-card light reveal">
-            <div class="guide-number">02</div>
-            <div class="guide-icon">◌</div>
-            <p class="card-label">NUTRITION & MEAL SYSTEM</p>
-            <h3>The Fuller-Body<br>Method</h3>
-            <p class="card-description">
-              A step-by-step nutrition and meal system built around familiar African
-              foods and practical meal combinations.
+            <div class="hero-buttons">
+
+                <a href="#guides" class="btn primary">
+                    Explore Our Guides
+                    <span>→</span>
+                </a>
+
+                <a href="#about" class="btn secondary">
+                    Meet Elizabeth
+                </a>
+
+            </div>
+
+            <div class="hero-features">
+
+                <div>
+                    <strong>Simple</strong>
+                    <small>No unnecessary jargon</small>
+                </div>
+
+                <div>
+                    <strong>Practical</strong>
+                    <small>Ready to use</small>
+                </div>
+
+                <div>
+                    <strong>Local</strong>
+                    <small>Made for Nigeria</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image reveal">
+
+            <div class="image-wrapper">
+
+                <img
+                    src="assets/elizabeth-sambo.png"
+                    alt="Elizabeth Sambo - Founder of Jozibroc"
+                >
+
+                <div class="founder-card">
+
+                    <span>FOUNDER</span>
+
+                    <strong>
+                        Elizabeth Sambo
+                    </strong>
+
+                    <small>
+                        Jozibroc
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================== -->
+
+<section class="section about" id="about">
+
+    <div class="container about-grid">
+
+        <div class="section-title reveal">
+
+            <div class="eyebrow">
+                ABOUT JOZIBROC
+            </div>
+
+            <h2>
+                Practical systems
+                without the
+                unnecessary complexity.
+            </h2>
+
+        </div>
+
+
+        <div class="about-text reveal">
+
+            <p>
+                Elizabeth Sambo started Jozibroc after years
+                of doing the unglamorous work of writing letters,
+                drafting contracts and organising records for others.
             </p>
-            <ul>
-              <li>Complete meal system</li>
-              <li>Local Nigerian ingredient guide</li>
-              <li>30-day meal calendar</li>
-              <li>Meal-prep schedule included</li>
-            </ul>
-            <div class="card-footer">
-              <div>
-                <span class="old-price">₦19,500</span>
-                <strong class="current-price">₦9,800</strong>
-              </div>
-              <a href="#contact" class="card-link" data-guide="The Fuller-Body Method">Get the guide →</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section class="process section" id="how-it-works">
-      <div class="container">
-        <div class="center-heading reveal">
-          <p class="eyebrow">HOW BUYING WORKS</p>
-          <h2>Three simple steps.</h2>
-          <p>No complicated checkout process. Just message, pay and receive your guide.</p>
+            <p>
+                She realised that many Nigerian women need
+                the same practical tools — just packaged so they
+                don't have to start from a blank page.
+            </p>
+
+            <p>
+                Every guide sold through Jozibroc is created from
+                lived experience, tested with real users and
+                priced for the market it is made for.
+            </p>
+
+            <div class="signature">
+                Elizabeth
+            </div>
+
+            <small>
+                Founder, Jozibroc
+            </small>
+
         </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GUIDES
+========================== -->
+
+<section class="section guides" id="guides">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <div>
+
+                <div class="eyebrow">
+                    OUR GUIDES
+                </div>
+
+                <h2>
+                    Tools you can
+                    actually use.
+                </h2>
+
+            </div>
+
+            <p>
+                Straightforward resources created around
+                real everyday needs.
+            </p>
+
+        </div>
+
+
+        <div class="products">
+
+
+            <!-- PRODUCT ONE -->
+
+            <article class="product product-dark reveal">
+
+                <span class="product-number">
+                    01
+                </span>
+
+                <div class="product-icon">
+                    ✦
+                </div>
+
+                <div class="product-label">
+                    BUSINESS TOOLKIT
+                </div>
+
+                <h3>
+                    The Administrative
+                    <br>
+                    Power-Pack
+                </h3>
+
+                <p>
+                    A ready-to-use business communication
+                    and contract toolkit containing
+                    fill-in-the-blank templates for the
+                    letters, agreements and records Nigerian
+                    small business owners use repeatedly.
+                </p>
+
+                <ul>
+
+                    <li>
+                        13 fill-in-the-blank templates
+                    </li>
+
+                    <li>
+                        5 practical categories
+                    </li>
+
+                    <li>
+                        Business communication,
+                        contracts and records
+                    </li>
+
+                    <li>
+                        No legal or writing background needed
+                    </li>
+
+                </ul>
+
+                <div class="product-bottom">
+
+                    <span>
+                        Priced for the Nigerian market
+                    </span>
+
+                    <a
+                        href="#contact"
+                        class="product-link"
+                        data-guide="The Administrative Power-Pack"
+                    >
+                        Get the Guide →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT TWO -->
+
+            <article class="product product-light reveal">
+
+                <span class="product-number">
+                    02
+                </span>
+
+                <div class="product-icon">
+                    ◌
+                </div>
+
+                <div class="product-label">
+                    NUTRITION & MEAL SYSTEM
+                </div>
+
+                <h3>
+                    The Fuller-Body
+                    <br>
+                    Method
+                </h3>
+
+                <p>
+                    A step-by-step nutrition and meal system
+                    built around traditional African foods
+                    and practical food combinations.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Complete meal system
+                    </li>
+
+                    <li>
+                        Nigerian ingredient guide
+                    </li>
+
+                    <li>
+                        30-day meal calendar
+                    </li>
+
+                    <li>
+                        Meal preparation schedule
+                    </li>
+
+                </ul>
+
+                <div class="product-bottom">
+
+                    <div class="price">
+
+                        <span>
+                            ₦19,500
+                        </span>
+
+                        <strong>
+                            ₦9,800
+                        </strong>
+
+                    </div>
+
+                    <a
+                        href="#contact"
+                        class="product-link"
+                        data-guide="The Fuller-Body Method"
+                    >
+                        Get the Guide →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     HOW IT WORKS
+========================== -->
+
+<section class="section how" id="how">
+
+    <div class="container">
+
+        <div class="center-title reveal">
+
+            <div class="eyebrow">
+                HOW BUYING WORKS
+            </div>
+
+            <h2>
+                Three simple steps.
+            </h2>
+
+            <p>
+                No complicated checkout process.
+                Just message, pay and receive your guide.
+            </p>
+
+        </div>
+
 
         <div class="steps">
-          <div class="step reveal">
-            <span class="step-no">01</span>
-            <div>
-              <h3>Message on WhatsApp</h3>
-              <p>Tell Elizabeth which guide you want.</p>
+
+
+            <div class="step reveal">
+
+                <span class="step-number">
+                    01
+                </span>
+
+                <div>
+
+                    <h3>
+                        Message on WhatsApp
+                    </h3>
+
+                    <p>
+                        Tell Elizabeth which guide
+                        you would like.
+                    </p>
+
+                </div>
+
             </div>
-          </div>
-          <div class="step reveal">
-            <span class="step-no">02</span>
-            <div>
-              <h3>Pay your way</h3>
-              <p>Bank transfer, debit card or USSD — whichever is easiest.</p>
+
+
+            <div class="step reveal">
+
+                <span class="step-number">
+                    02
+                </span>
+
+                <div>
+
+                    <h3>
+                        Pay your way
+                    </h3>
+
+                    <p>
+                        Bank transfer, debit card or
+                        USSD — whichever is easiest.
+                    </p>
+
+                </div>
+
             </div>
-          </div>
-          <div class="step reveal">
-            <span class="step-no">03</span>
-            <div>
-              <h3>Receive your PDF</h3>
-              <p>Your guide is delivered straight to WhatsApp or email.</p>
+
+
+            <div class="step reveal">
+
+                <span class="step-number">
+                    03
+                </span>
+
+                <div>
+
+                    <h3>
+                        Receive your PDF
+                    </h3>
+
+                    <p>
+                        Your guide is delivered directly
+                        to your WhatsApp or email.
+                    </p>
+
+                </div>
+
             </div>
-          </div>
+
         </div>
 
-        <div class="process-cta reveal">
-          <a class="btn btn-primary" href="https://wa.me/2348035386550?text=Hello%20Elizabeth%2C%20I%27d%20like%20to%20buy%20a%20Jozibroc%20guide." target="_blank" rel="noopener">
-            Start on WhatsApp <span>↗</span>
-          </a>
-        </div>
-      </div>
-    </section>
 
-    <section class="testimonials section" id="testimonials">
-      <div class="container">
-        <div class="center-heading reveal">
-          <p class="eyebrow">WHAT BUYERS ARE SAYING</p>
-          <h2>Real people. Real feedback.</h2>
+        <div class="center-button">
+
+            <a
+                href="https://wa.me/2348035386550?text=Hello%20Elizabeth%2C%20I%27m%20interested%20in%20a%20Jozibroc%20guide."
+                target="_blank"
+                class="btn primary"
+            >
+                Start on WhatsApp
+                <span>↗</span>
+            </a>
+
         </div>
 
-        <div class="testimonial-grid">
-          <article class="testimonial reveal">
-            <div class="quote-mark">“</div>
-            <p>Customer quote here. Replace this with a genuine review from a Jozibroc buyer.</p>
-            <div class="reviewer"><strong>Customer Name</strong><span>City, Nigeria</span></div>
-          </article>
-          <article class="testimonial reveal">
-            <div class="quote-mark">“</div>
-            <p>Customer quote here. Replace this with a genuine review from a Jozibroc buyer.</p>
-            <div class="reviewer"><strong>Customer Name</strong><span>City, Nigeria</span></div>
-          </article>
-          <article class="testimonial reveal">
-            <div class="quote-mark">“</div>
-            <p>Customer quote here. Replace this with a genuine review from a Jozibroc buyer.</p>
-            <div class="reviewer"><strong>Customer Name</strong><span>City, Nigeria</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section" id="contact">
-      <div class="container contact-box reveal">
-        <div class="contact-copy">
-          <p class="eyebrow">READY WHEN YOU ARE</p>
-          <h2>Let's get you the right guide.</h2>
-          <p>
-            Have a question, want to buy a guide, or need help choosing?
-            Send Elizabeth a message and she'll take it from there.
-          </p>
-        </div>
-        <div class="contact-actions">
-          <a class="contact-item whatsapp" href="https://wa.me/2348035386550?text=Hello%20Elizabeth%2C%20I%27m%20interested%20in%20a%20Jozibroc%20guide." target="_blank" rel="noopener">
-            <span class="contact-icon">WA</span>
-            <span><small>WhatsApp / Phone</small><strong>0803 538 6550</strong></span>
-            <span>↗</span>
-          </a>
-          <a class="contact-item" href="https://www.instagram.com/jozibroc/" target="_blank" rel="noopener">
-            <span class="contact-icon">IG</span>
-            <span><small>Instagram</small><strong>@jozibroc</strong></span>
-            <span>↗</span>
-          </a>
-          <div class="contact-item">
-            <span class="contact-icon">FB</span>
-            <span><small>Facebook</small><strong>Jozibroc</strong></span>
-            <span>•</span>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <a class="brand footer-brand" href="#home">
-        <span class="brand-mark">J</span>
-        <span>Jozibroc</span>
-      </a>
-      <p>Practical tools. Ready to use.</p>
-      <p>© <span id="year"></span> Jozibroc. All rights reserved.</p>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+</section>
+
+
+<!-- =========================
+     REVIEWS
+========================== -->
+
+<section class="section reviews" id="reviews">
+
+    <div class="container">
+
+        <div class="center-title reveal">
+
+            <div class="eyebrow">
+                WHAT BUYERS ARE SAYING
+            </div>
+
+            <h2>
+                Real people.
+                Real feedback.
+            </h2>
+
+        </div>
+
+
+        <div class="review-grid">
+
+
+            <div class="review reveal">
+
+                <div class="quote">
+                    “
+                </div>
+
+                <p>
+                    Customer review will appear here.
+                    Replace this text with a genuine
+                    customer testimonial.
+                </p>
+
+                <div class="review-person">
+
+                    <strong>
+                        Customer Name
+                    </strong>
+
+                    <span>
+                        Abuja, Nigeria
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="review reveal">
+
+                <div class="quote">
+                    “
+                </div>
+
+                <p>
+                    Customer review will appear here.
+                    Replace this text with a genuine
+                    customer testimonial.
+                </p>
+
+                <div class="review-person">
+
+                    <strong>
+                        Customer Name
+                    </strong>
+
+                    <span>
+                        Lagos, Nigeria
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="review reveal">
+
+                <div class="quote">
+                    “
+                </div>
+
+                <p>
+                    Customer review will appear here.
+                    Replace this text with a genuine
+                    customer testimonial.
+                </p>
+
+                <div class="review-person">
+
+                    <strong>
+                        Customer Name
+                    </strong>
+
+                    <span>
+                        Port Harcourt, Nigeria
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================== -->
+
+<section class="section contact" id="contact">
+
+    <div class="container contact-grid">
+
+        <div class="contact-text reveal">
+
+            <div class="eyebrow">
+                GET IN TOUCH
+            </div>
+
+            <h2>
+                Let's get you
+                the right guide.
+            </h2>
+
+            <p>
+                Have a question, want to buy a guide,
+                or need help choosing one?
+                Send Elizabeth a message.
+            </p>
+
+        </div>
+
+
+        <div class="contact-links reveal">
+
+
+            <a
+                href="https://wa.me/2348035386550?text=Hello%20Elizabeth%2C%20I%27m%20interested%20in%20a%20Jozibroc%20guide."
+                target="_blank"
+                class="contact-link"
+            >
+
+                <div class="contact-icon">
+                    WA
+                </div>
+
+                <div>
+                    <small>
+                        WHATSAPP / PHONE
+                    </small>
+
+                    <strong>
+                        0803 538 6550
+                    </strong>
+                </div>
+
+                <span>↗</span>
+
+            </a>
+
+
+            <a
+                href="https://www.instagram.com/jozibroc/"
+                target="_blank"
+                class="contact-link"
+            >
+
+                <div class="contact-icon">
+                    IG
+                </div>
+
+                <div>
+                    <small>
+                        INSTAGRAM
+                    </small>
+
+                    <strong>
+                        @jozibroc
+                    </strong>
+                </div>
+
+                <span>↗</span>
+
+            </a>
+
+
+            <div class="contact-link">
+
+                <div class="contact-icon">
+                    FB
+                </div>
+
+                <div>
+                    <small>
+                        FACEBOOK
+                    </small>
+
+                    <strong>
+                        Jozibroc
+                    </strong>
+                </div>
+
+                <span>
+                    •
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    <div class="container footer">
+
+        <div class="logo footer-logo">
+
+            <span class="logo-circle">
+                J
+            </span>
+
+            <span>
+                Jozibroc
+            </span>
+
+        </div>
+
+        <p>
+            Practical tools. Ready to use.
+        </p>
+
+        <p>
+            © <span id="year"></span> Jozibroc.
+            All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
